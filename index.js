@@ -14,7 +14,6 @@ const Choices = require('inquirer/lib/objects/choices')
 const Separator = require('inquirer/lib/objects/separator')
 const path = require('path')
 
-
 /**
  * 常量
  */
@@ -50,6 +49,10 @@ class Prompt {
     this.selected = 0
     this.opt.default = null
   }
+  /**
+   * 入口函数
+   * @param {Function} cb 
+   */
   _run (cb) {
     this.searchMode = false
     this.done = cb
@@ -195,6 +198,9 @@ class Prompt {
     this.render()
   }
 
+  /**
+   * 向下选择
+   */
   onDownKey () {
     const len = this.opt.choices.realLength
     this.selected = (this.selected < len - 1) ? this.selected + 1 : 0
@@ -207,6 +213,8 @@ util.inherits(Prompt, Base)
 
 /**
  * 终端渲染列表选择
+ * @param {Array} choices - 当前路径可选择的数组
+ * @param {Number} pointer - 终端选择指示器的位置
  */
 function listRender(choices, pointer) {
   let output = ''
