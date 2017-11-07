@@ -1,0 +1,30 @@
+{
+  "result": [
+    {
+      "name": "channel",
+      "title": "渠道",
+      "type": 0,
+      "children": [
+        { 
+          "name ": "order",
+          "title": "订单",
+          "children": [
+            {
+              "name": "list",
+              "title": "列表",
+              "children": [],
+              "type": 1
+            }
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "name": "distribu",
+      "title": "分销",
+      "type": 0,
+      "children": []
+    }
+  ]
+}
