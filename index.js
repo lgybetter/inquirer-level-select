@@ -115,7 +115,7 @@ class Prompt {
     if (this.status === 'answered') {
       message += chalk.cyan(this.currentPath)
     } else {
-      message += chalk.bold('\n 当前目录: ') + chalk.cyan(this.currentPath)
+      message += chalk.bold('\n  当前目录: ') + chalk.cyan(this.currentPath)
       const choicesStr = listRender(this.opt.choices, this.selected)
       message += '\n' + this.paginator.paginate(choicesStr, this.selected, this.opt.pageSize)
     }

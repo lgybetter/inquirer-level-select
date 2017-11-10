@@ -7,7 +7,7 @@ inquirer.prompt([
   {
     type: "level",
     name: "pathArr",
-    message: "请选择 目录/模块",
+    message: "请选择",
     basePath: "./模块",
     data: result
   }
