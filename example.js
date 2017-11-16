@@ -1,6 +1,6 @@
 const inquirer = require("inquirer")
 const { result } = require("./config")
-const Prompt = require('./index')
+const { base: Prompt } = require('./index')
 inquirer.registerPrompt('level', Prompt)
 
 inquirer.prompt([

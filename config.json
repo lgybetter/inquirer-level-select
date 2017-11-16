@@ -17,6 +17,20 @@
             }
           ],
           "type": 0
+        },
+        {
+          "name": "manage",
+          "title": "管理",
+          "children": [
+          ],
+          "type": 0
+        },
+        {
+          "name": "manage2",
+          "title": "管理2",
+          "children": [
+          ],
+          "type": 1
         }
       ]
     },
