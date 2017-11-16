@@ -24,6 +24,20 @@
             }
           ],
           "type": 0
+        },
+        {
+          "name": "manage",
+          "title": "管理",
+          "children": [
+          ],
+          "type": 0
+        },
+        {
+          "name": "manage2",
+          "title": "管理2",
+          "children": [
+          ],
+          "type": 1
         }
       ]
     },
@@ -43,19 +57,20 @@
 ```js
 const inquirer = require("inquirer")
 const { result } = require("./config")
-const Prompt = require('./index')
+const { del: Prompt } = require('./index')
 inquirer.registerPrompt('level', Prompt)
 
 inquirer.prompt([
   {
     type: "level",
     name: "pathArr",
-    message: "请选择 目录/模块",
+    message: "请选择",
     basePath: "./模块",
     data: result
   }
 ]).then(res => {
   console.log(res)
 })
+
 
 ```
